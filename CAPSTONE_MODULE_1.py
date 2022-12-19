@@ -85,7 +85,7 @@ def read_data_grade():
 # JIKA GRADE YANG DIINGINKAN TIDAK ADA DI DAFTAR
 # MAKA OUTPUT SEPERTI BERIKUT DAN KEMBALI KE MENU READ DATA
         else:
-            print(f'\n Tidak Ada Barang Dengan Kategori {grade_barang}')
+            print(f'\n Tidak Ada Barang Dengan Grade {grade_barang}')
 
 ##   FUNGSI MENU UNTUK MENAMPILKAN DAFTAR PRODUK
 def read_data():
@@ -189,7 +189,7 @@ def delete_data():
         print(' TIDAK ADA BARANG YANG DAPAT DIHAPUS')
         delete_data_menu()
     else:
-        id_barang_dihapus=input('Masukkan no id Barang yang akan dihapus (7 digit angka): ')
+        id_barang_dihapus=input('Masukkan no id barang yang akan dihapus (7 digit angka): ')
 
 # JIKA BARANG ADA DAN NO ID ADA DI DAFTAR
 # MAKA BARANG AKAN DIHAPUS DENGAN MEMVALIDASI TERLEBIH DAHULU
@@ -245,7 +245,7 @@ def delete_data_menu():
 
 ##   FUNGSI UPDATE DATA UNTUK BARANG DATANG
 def update_data_datang():
-    id_datang=input('Masukkan no id barang yang datang (7 digit): ')
+    id_datang=input('Masukkan no id barang yang datang (7 digit angka): ')
 
 # JIKA BARANG ADA DAN NO ID ADA DI DAFTAR
 # MAKA BARANG AKAN DITAMBAH JUMLAH STOKNYA DENGAN JUMLAH YANG DIINGINKAN DALAM KG
@@ -276,7 +276,7 @@ def update_data_kirim():
         print(' MAAF BARANG KOSONG, TIDAK DAPAT MELAKUKAN PENGIRIMAN')
         update_data_menu()
     else:
-        id_kirim=input('Masukkan no id barang yang akan dikirim (7 digit): ')
+        id_kirim=input('Masukkan no id barang yang akan dikirim (7 digit angka): ')
 # JIKA BARANG ADA DAN NO ID ADA DI DAFTAR
 # DAN BARANG AKAN DIKIRIM JUMLAH PENGIRIMAN DALAM KG DAN STOK MENCUKUPI
 # PENGIRIMAN DAPAT DILAKUKAN
